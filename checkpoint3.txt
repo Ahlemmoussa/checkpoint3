@@ -1,0 +1,44 @@
+Q1
+def largest (t)
+    return max(t)
+print(largest(20,35,19))
+Q2
+def calculation(a,b):
+    return (a+b,a-b)
+print(calculation(15,6))
+Q3
+def somme(t):
+    summ=0
+    for i in range(len(t)):
+        summ=summ+ t[i]
+    return(summ)
+print(somme([1,15,19,55,76]))
+def produit(f):
+    p=1
+    for i in range(len(f)):
+        p=p*f[i]
+    return(p)
+print(produit([14,1,8,66,15]))
+def glob(tab):
+    tp=[]
+    ti=[]
+    for i in range(len(tab)):
+        if i%2==0 :
+            tp.append(tab[i])
+        else:
+            ti.append(tab[i])
+    return(somme(tp), produit(ti))
+
+print(glob([15,11,8,12,4,1]))
+Q4
+colors=input('donner une chaine de caractère' )
+t=colors.split('-')
+print(t)
+t.sort()
+print(t)
+Q5
+colors=input('donner une chaine de caractère' )
+t=colors.split('-')
+print(t)
+t.sort()
+print(t)
